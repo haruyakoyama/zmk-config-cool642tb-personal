@@ -23,7 +23,7 @@
         };
 
         conf_layer {
-            bindings = <&mo 4>;
+            bindings = <&mo 6>;
             key-positions = <39 40>;
             layers = <0>;
         };
