@@ -29,7 +29,7 @@
         };
 
         scroll {
-            bindings = <&mo 0>;
+            bindings = <&mo 5>;
             key-positions = <31 32>;
             layers = <0>;
         };
