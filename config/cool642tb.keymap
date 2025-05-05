@@ -60,10 +60,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W    &kp E             &kp R         &kp T                                           &kp Y               &kp U  &kp I      &kp O      &kp P
-&kp A                  &kp S    &kp D             &kp F         &kp G               &none        &kp BACKSPACE  &kp H               &kp J  &kp K      &kp L      &kp ENTER
-&kp Z                  &kp X    &kp C             &kp V         &kp B               &kp COMMA    &kp PERIOD     &kp N               &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
-&mt LEFT_SHIFT ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 1 SPACE  &lt 2 SPACE    &mt LEFT_GUI LANG1                               &kp LEFT_SHIFT
+&kp Q                  &kp W    &kp E             &kp R         &kp T                                         &kp Y               &kp U  &kp I      &kp O      &kp P
+&kp A                  &kp S    &kp D             &kp F         &kp G               &none      &kp BACKSPACE  &kp H               &kp J  &kp K      &kp L      &kp ENTER
+&kp Z                  &kp X    &kp C             &kp V         &kp B               &kp COMMA  &kp PERIOD     &kp N               &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
+&mt LEFT_SHIFT ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_GUI LANG2  &lt 1 TAB  &lt 2 SPACE    &mt LEFT_GUI LANG1                               &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -73,7 +73,7 @@
             bindings = <
 &kp ESCAPE      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSPACE                &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR        &kp PERCENT
 &kp TAB         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER      &none  &none  &kp GRAVE        &kp MINUS    &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER      &none  &none  &none            &none        &kp SEMICOLON  &kp SQT           &none
+&kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER      &none  &none  &none            &none        &kp SEMICOLON  &kp SQT           &none
 &kp LEFT_SHIFT  &kp NUMBER_0  &kp PERIOD    &none         &none          &none  &none  &none                                                          &kp LEFT_SHIFT
             >;
 
@@ -82,10 +82,10 @@
 
         move {
             bindings = <
-&kp LG(N9)              &kp LG(UP_ARROW)      &kp UP_ARROW          &none                 &kp LG(N0)                            &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LG(LEFT)            &kp LEFT_ARROW        &none                 &kp RIGHT             &kp LG(RIGHT)      &none       &none  &kp TILDE  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp LG(LS(LEFT_ARROW))  &none                 &kp DOWN              &kp LG(DOWN)          &kp LG(LS(RIGHT))  &kp K_MUTE  &none  &none      &none           &kp COLON     &kp DOUBLE_QUOTES     &kp QUESTION
-&kp LG(LS(NUMBER_3))    &kp LA(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LA(LS(NUMBER_4))  &kp LG(LS(N5))     &none       &none  &none                                                          &none
+&kp LG(N9)              &kp LG(UP_ARROW)      &kp UP_ARROW          &none                 &kp LG(N0)                                   &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LG(LEFT)            &kp LEFT_ARROW        &none                 &kp RIGHT             &kp LG(RIGHT)      &none  &kp C_AC_ZOOM_IN   &kp TILDE  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp LG(LS(LEFT_ARROW))  &none                 &kp DOWN              &kp LG(DOWN)          &kp LG(LS(RIGHT))  &none  &kp C_AC_ZOOM_OUT  &none      &none           &kp COLON     &kp DOUBLE_QUOTES     &kp QUESTION
+&kp LG(LS(NUMBER_3))    &kp LA(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LA(LS(NUMBER_4))  &kp LG(LS(N5))     &none  &none              &none                                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -93,10 +93,10 @@
 
         config {
             bindings = <
-&none  &none  &none  &none  &none                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
-&none  &none  &none  &none  &none  &none  &none  &none         &none         &none         &none         &none
-&none  &none  &none  &none  &none  &none  &none  &none         &none         &none         &none         &none
-&none  &none  &none  &none  &none  &none  &none  &none                                                   &none
+&none  &none  &none  &none                 &none                                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
+&none  &none  &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none       &none  &none         &none         &none         &none         &none
+&none  &none  &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_MUTE  &none  &none         &none         &none         &none         &none
+&none  &none  &none  &none                 &none                 &none       &none  &none                                                   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
